@@ -11,7 +11,8 @@
     "start": "webpack --mode=development --watch --open",
     "build": "webpack",
     "eslint": "",
-    "test": ""
+    "test": "",
+    "clean": "rm ./public/bundle.js"
   },
   "author": "Yura Kolesnikov",
   "main": "index.js",

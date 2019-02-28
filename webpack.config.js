@@ -2,6 +2,7 @@ const path = require('path')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require('autoprefixer')
 const TerserPlugin = require('terser-webpack-plugin')
+const cssnano = require('cssnano')
 
 module.exports = {
   entry: './src/index.js',
@@ -39,7 +40,8 @@ module.exports = {
               plugins: [
                 autoprefixer({
                   browsers:['ie >= 8', 'last 4 version']
-                })
+                }),
+                cssnano()
               ],
               sourceMap: true
             }

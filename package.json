@@ -17,6 +17,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "cssnano": "^4.1.10",
     "webpack": "4.29.6",
     "webpack-cli": "3.2.3"
   },

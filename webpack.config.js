@@ -1,7 +1,7 @@
 const path = require('path')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require('autoprefixer')
-
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -67,6 +67,18 @@ module.exports = {
     })
   ],
   
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        test: /\.m?js(\?.*)?$/i,
+        exclude: /node_modules/,
+        cache: true,
+        parallel: true,
+        sourceMap: true
+      })
+    ]
+  },
+
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
     watchContentBase: true,

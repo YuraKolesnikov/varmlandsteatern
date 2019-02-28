@@ -4,7 +4,9 @@ All notable changes to this project wil be documented in this file.
 ## 1.0.2 - 1.03.2019  
 ### Added  
 - MiniCSSPlugin for two-thread js and css loading
-- autoprefixer  
+- autoprefixer
+- webpack-dev-server setup (with html, src/scss and src/js livereload)  
+
 
 
 ## 1.0.1 - 28.02.2019

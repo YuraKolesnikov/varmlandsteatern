@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\js$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -20,6 +20,14 @@ module.exports = {
             presets: ['env', 'stage-0']
           }
         }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader', 
+          'sass-loader'
+        ]
       }
     ]
   },

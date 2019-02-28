@@ -1,0 +1,28 @@
+$dark: #2b3a42;
+$tomato: tomato;
+@import './button.scss';
+
+html {
+  font-family: 'Consolas', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $dark;
+  color: $tomato;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 42px;
+}
+
+.logo {
+  min-width: 256px;
+}

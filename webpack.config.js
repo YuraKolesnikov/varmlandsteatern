@@ -28,6 +28,17 @@ module.exports = {
           'css-loader', 
           'sass-loader'
         ]
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 8000,
+            name: '[path][name].[ext]',
+            outputPath: 'img/'
+          }
+        }
       }
     ]
   },

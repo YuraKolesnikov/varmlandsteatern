@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/sass-loader/lib/loader.js!./src/main.scss":
-/*!****************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/main.scss ***!
-  \****************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/main.scss":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/main.scss ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"button {\\n  border: 0;\\n  padding: 10px 20px;\\n  font-weight: bold;\\n  font-family: inherit;\\n  color: #fff;\\n  background-color: tomato; }\\n\\nhtml {\\n  font-family: 'Consolas', monospace; }\\n\\nbody {\\n  margin: 0;\\n  padding: 0;\\n  background-color: #2b3a42;\\n  color: tomato;\\n  width: 100vw;\\n  height: 100vh;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center; }\\n\\n._2-mt3YDEYzyQ0fo-sGnpTJ {\\n  font-size: 42px; }\\n\\n._4xwz8h3aXZNgkcPAmM1pK {\\n  min-width: 256px; }\\n\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"title\": \"_2-mt3YDEYzyQ0fo-sGnpTJ\",\n\t\"logo\": \"_4xwz8h3aXZNgkcPAmM1pK\"\n};\n\n//# sourceURL=webpack:///./src/main.scss?./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"button {\\n  border: 0;\\n  padding: 10px 20px;\\n  font-weight: bold;\\n  font-family: inherit;\\n  color: #fff;\\n  background-color: tomato; }\\n\\nhtml {\\n  font-family: 'Consolas', monospace; }\\n\\nbody {\\n  margin: 0;\\n  padding: 0;\\n  background-color: #2b3a42;\\n  color: tomato;\\n  width: 100vw;\\n  height: 100vh;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center; }\\n\\n.title {\\n  font-size: 42px; }\\n\\n.logo {\\n  max-width: 256px; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -139,7 +139,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\n\nconsole.log('Main file here!');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n__webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\n\nvar _webpack = __webpack_require__(/*! ./webpack.png */ \"./src/webpack.png\");\n\nvar _webpack2 = _interopRequireDefault(_webpack);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nconsole.log('Main file here!');\n\nvar app = document.getElementById('app');\n\nvar img = document.createElement('img');\nimg.src = _webpack2.default;\nimg.className = 'logo';\n\napp.appendChild(img);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -150,7 +150,18 @@ eval("\n\n__webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\n\nconsol
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-1!../node_modules/sass-loader/lib/loader.js!./main.scss */ \"./node_modules/css-loader/dist/cjs.js?!./node_modules/sass-loader/lib/loader.js!./src/main.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/main.scss?");
+eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/lib/loader.js!./main.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/main.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/main.scss?");
+
+/***/ }),
+
+/***/ "./src/webpack.png":
+/*!*************************!*\
+  !*** ./src/webpack.png ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/webpack.png\";\n\n//# sourceURL=webpack:///./src/webpack.png?");
 
 /***/ })
 

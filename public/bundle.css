@@ -1,0 +1,29 @@
+button {
+  border: 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: inherit;
+  color: #fff;
+  background-color: tomato; }
+
+html {
+  font-family: 'Consolas', monospace; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2b3a42;
+  color: tomato;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.title {
+  font-size: 42px; }
+
+.logo {
+  max-width: 256px; }
+

@@ -7,12 +7,18 @@
     "type": "git"
   },
   "scripts": {
-    "start": "",
-    "build": "",
+    "dev": "webpack-dev-server bla bla",
+    "start": "webpack --mode=development --watch --open",
+    "build": "webpack",
     "eslint": "",
     "test": ""
   },
   "author": "Yura Kolesnikov",
-  "main": "",
-  "license": "MIT"
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "4.29.6",
+    "webpack-cli": "3.2.3",
+    "webpack-dev-server": "3.2.1"
+  }
 }

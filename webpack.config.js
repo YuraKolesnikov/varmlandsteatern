@@ -66,6 +66,12 @@ module.exports = {
       filename: 'bundle.css'
     })
   ],
+  
+  devServer: {
+    contentBase: path.resolve(__dirname, 'public'),
+    watchContentBase: true,
+    overlay: true
+  },
 
   devtool: 'eval'
 }

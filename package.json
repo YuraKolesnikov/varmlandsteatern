@@ -7,8 +7,7 @@
     "type": "git"
   },
   "scripts": {
-    "dev": "webpack-dev-server bla bla",
-    "start": "webpack --mode=development --watch --open",
+    "start": "webpack-dev-server --open --watch",
     "build": "webpack",
     "eslint": "",
     "test": "",

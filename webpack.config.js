@@ -9,5 +9,20 @@ module.exports = {
     path: path.resolve(__dirname, 'public')
   },
 
+  module: {
+    rules: [
+      {
+        test: /\js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env', 'stage-0']
+          }
+        }
+      }
+    ]
+  },
+
   devtool: 'eval'
 }

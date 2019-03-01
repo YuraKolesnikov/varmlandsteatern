@@ -1,0 +1,15 @@
+/* Универсальное скругление */
+@mixin radius($radius) {
+  -webkit-border-radius: $rad;
+ -moz-border-radius: $rad;
+ -ms-border-radius: $rad;
+ border-radius: $rad;
+}
+
+/* Отдельное скругление каждому углу - top, right, bottom, left */
+@mixin radiusCustom($t, $r, $b, $l) {
+  -webkit-border-radius: $t $r $b $l;
+  -moz-border-radius: $t $r $b $l;
+  -ms-border-radius: $t $r $b $l;
+  border-radius: $t $r $b $l;
+}

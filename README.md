@@ -21,8 +21,8 @@ https://github.com/YuraKolesnikov/webpack-startup && cd webpack-startup && yarn 
 *Coming soon*
 
 ## Upcoming tasks  
-- [ ] Bootstrap and jQuery implementation  
-- [ ] Making custom SCSS library  
-- [ ] CSS and JS code optimization (minifying)  
+- [x] Bootstrap and jQuery implementation  
+- [x] Making custom SCSS library  
+- [x] CSS and JS code optimization (minifying)  
 - [ ] Multi-page support  
 - [ ] Templating (hbs)  

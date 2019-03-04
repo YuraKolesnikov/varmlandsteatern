@@ -11,7 +11,8 @@
     "build": "webpack",
     "eslint": "",
     "test": "",
-    "clean": "rm ./public/bundle.js ./public/bundle.css && rm -rf ./public/img"
+    "clean": "rm ./public/bundle.js ./public/bundle.css && rm -rf ./public/img",
+    "deploy": "git checkout deploy && git merge master && git push"
   },
   "author": "Yura Kolesnikov",
   "main": "index.js",

@@ -1,0 +1,13 @@
+.course-card {
+  border-radius: 10px;
+  padding: 32px 32px 35px 32px;
+  background-color: $faded-green;
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+}

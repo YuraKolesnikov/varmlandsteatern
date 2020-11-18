@@ -1,12 +1,10 @@
 @import "vars";
-@import "mixins/main";
-@import "../libs/bootstrap/scss/bootstrap.scss";
 @import "base";
+@import "mixins/mixins";
+@import "helpers/helpers";
 @import "libs";
 @import "fonts";
 
-/* Sections */
-
-/* Blocks */
+@import "components/components";
 
 @import "media"; // Always at the end

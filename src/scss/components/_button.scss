@@ -1,0 +1,49 @@
+.button {
+  border: 0;
+  color: $base-black;
+  padding: 16px 44px;
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 12px;
+  user-select: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow .15s ease;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &--round {
+    border-radius: $basic-border-radius;
+  }
+
+  &--green {
+    @include button($base-green);
+  }
+
+  &--blue {
+    @include button($base-blue, true);
+  }
+
+  &--red {
+    @include button($base-red);
+  }
+
+  &--yellow {
+    @include button($base-yellow);
+  }
+
+  &--lg {
+    padding: 25px 44px;
+    font-size: 40px;
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: .75;
+    user-select: none;
+    pointer-events: none;
+  }
+}

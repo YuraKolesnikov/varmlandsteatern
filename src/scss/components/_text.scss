@@ -1,0 +1,22 @@
+.text {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 2.375rem;
+
+  &--condensed {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: $breakpoint--medium) {
+  .text {
+    font-size: 1rem;
+    line-height: 1.75rem;
+
+    &--condensed {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+  }
+}

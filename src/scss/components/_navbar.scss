@@ -1,0 +1,13 @@
+.navbar {
+  background: linear-gradient(180deg, rgba(black, 0.79) 50.4%, rgba($dark-gray, 0) 103.77%);
+
+  &__link {
+    color: #FFF;
+    font-size: 0.875rem;
+    text-decoration: none;
+
+    &--active {
+      color: $base-red;
+    }
+  }
+}

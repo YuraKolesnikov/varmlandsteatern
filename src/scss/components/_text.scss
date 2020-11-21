@@ -1,22 +1,28 @@
 .text {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 2.375rem;
+  font-size: $text-20;
+  line-height: 150%;
 
   &--condensed {
-    font-size: 1.125rem;
-    line-height: 2rem;
+    font-size: $text-18;
+    line-height: 140%;
+  }
+
+  &--large {
+    font-size: $text-28;
+    line-height: 135%;
   }
 }
 
 @media screen and (max-width: $breakpoint--medium) {
   .text {
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-size: $text-16;
 
     &--condensed {
-      font-size: 0.875rem;
-      line-height: 1.625rem;
+      font-size: $text-14;
+    }
+
+    &--large {
+      font-size: $text-22;
     }
   }
 }

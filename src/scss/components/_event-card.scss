@@ -1,0 +1,32 @@
+.event-card {
+
+  &__title {
+    font-weight: 800;
+    font-size: $text-34;
+    letter-spacing: 0.02em;
+    color: #000;
+  }
+
+  &__date {
+    font-weight: 800;
+    font-size: $text-18;
+    color: $dark-gray;
+  }
+
+  &__body {
+    margin-bottom: 31px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+    margin-right: 20px;
+  }
+
+  &__text {
+
+  }
+
+
+}

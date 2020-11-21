@@ -20,7 +20,8 @@ $base-yellow: #FDEBD3;
 $base-blue:   #3872A3;
 $dark-blue:   #264E70;
 $base-gray:   #D1D0D0;
-$dark-gray:   #2C2C2C;
+$darker-gray:   #2C2C2C;
+$dark-gray:   #6C6C6C;
 
 /**
  * Typography colors
@@ -32,17 +33,11 @@ $color--link:     $color--black;    // Länkar
 /**
  * Primary font used for text
  */
-$typeface--primary: 'Roboto', sans-serif;
-
-/**
- * Secondary font used for headings, links, etc.
- */
-$typeface--secondary: 'Roboto Condensed', sans-serif;
+$typeface--primary: 'Raleway', sans-serif;
 
 /**
  * Use of fonts
  */
-$font--headings: $typeface--secondary;  // Headings
 $font--text: $typeface--primary;        // Text
 
 /**
@@ -63,3 +58,20 @@ $basic-border-radius: 25px;
  */
 $gutter-width: 3%;
 $column-width: (100% - ($gutter-width*12))/12;
+
+/**
+ * Font size
+ */
+$text-10: .625rem;
+$text-12: .75rem;
+$text-14: .875rem;
+$text-16: 1rem;
+$text-18: 1.125rem;
+$text-20: 1.25rem;
+$text-22: 1.375rem;
+$text-24: 1.5rem;
+$text-28: 1.75rem;
+$text-32: 2rem;
+$text-34: 2.125rem;
+$text-40: 2.5rem;
+$text-46: 2.875rem;

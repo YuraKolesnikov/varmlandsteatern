@@ -5,6 +5,10 @@
 @import "libs";
 @import "fonts";
 
+body {
+  font-family: $font--text;
+}
+
 @import "components/components";
 
 @import "media"; // Always at the end

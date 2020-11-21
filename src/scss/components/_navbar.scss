@@ -1,13 +1,19 @@
 .navbar {
-  background: linear-gradient(180deg, rgba(black, 0.79) 50.4%, rgba($dark-gray, 0) 103.77%);
+  background: linear-gradient(180deg, rgba(black, 0.79) 50.4%, rgba($darker-gray, 0) 103.77%);
 
   &__link {
     color: #FFF;
-    font-size: 0.875rem;
+    font-size: $text-14;
     text-decoration: none;
 
     &--active {
       color: $base-red;
     }
+  }
+}
+
+@media screen and (max-width: $breakpoint--medium) {
+  .navbar__link {
+    font-size: $text-20;
   }
 }

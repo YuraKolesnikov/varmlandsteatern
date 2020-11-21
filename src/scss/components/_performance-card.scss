@@ -1,40 +1,30 @@
 .performance-card {
-  margin-bottom: 30px;
+  max-width: 443px;
+  margin: 0 auto 30px;
 
   &__img {
-    position: relative;
-    overflow: hidden;
-    border-radius: $basic-border-radius;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
     margin-bottom: 22px;
-    height: 0;
-    /* Temporary padding */
-    padding-top: 50%;
-
-    img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      object-fit: contain;
-    }
   }
 
   &__title {
     font-weight: 800;
-    font-size: 32px;
+    font-size: $text-32;
     margin-bottom: 15px;
   }
 
   &__text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: $text-18;
     line-height: 32px;
     margin-bottom: 17px;
   }
 
   &__date {
     font-weight: 700;
-    font-size: 20px;
+    font-size: $text-20;
     line-height: 30px;
   }
 }

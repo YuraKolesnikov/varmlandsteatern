@@ -1,9 +1,9 @@
 .button {
   border: 0;
   color: $base-black;
-  padding: 16px 44px;
-  font-size: 30px;
-  font-weight: 800;
+  padding: 8px 30px;
+  font-size: $text-20;
+  font-weight: 600;
   cursor: pointer;
   border-radius: 12px;
   user-select: none;
@@ -36,12 +36,13 @@
   }
 
   &--lg {
-    padding: 25px 44px;
-    font-size: 40px;
+    padding: 14px 30px;
+    font-size: 1.5rem;
   }
 
   &:disabled,
   &--disabled {
+    background-color: $base-gray;
     opacity: .75;
     user-select: none;
     pointer-events: none;

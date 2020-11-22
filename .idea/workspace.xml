@@ -14,26 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d936dd3-7a28-4e32-ad8a-ff8b2189f402" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/startsida.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_button-icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_cta.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_hamburger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_hero.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_social-button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/pages/_home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/pages/pages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/helpers/_body-grow.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/typography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libs/bootstrap/scss/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/bootstrap/scss/_grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_title.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/components.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/helpers/helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/helpers/helpers.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +91,16 @@
       <workItem from="1605933507349" duration="3760000" />
       <workItem from="1605981325319" duration="2829000" />
       <workItem from="1605984316859" duration="2442000" />
-      <workItem from="1606033006365" duration="1091000" />
+      <workItem from="1606033006365" duration="2162000" />
     </task>
+    <task id="LOCAL-00001" summary="Working on home page components">
+      <created>1606035314051</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606035314051</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +117,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working on home page components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on home page components" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1899" height="87" key="GridCell.Tab.0.bottom" timestamp="1605986830822">
@@ -142,6 +139,10 @@
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
     <state width="1899" height="87" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1605986830821" />
+    <state x="-1360" y="178" key="Vcs.Push.Dialog.v2" timestamp="1606035315996">
+      <screen x="-1920" y="-102" width="1920" height="1080" />
+    </state>
+    <state x="-1360" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606035315996" />
     <state x="-1259" y="193" width="598" height="490" key="find.popup" timestamp="1605936606673">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>

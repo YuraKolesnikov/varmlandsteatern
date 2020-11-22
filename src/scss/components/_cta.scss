@@ -2,10 +2,6 @@
   background-image: url("/img/bg_green.png");
   height: 447px;
 
-  &--last-section {
-    transform: translateY(100px);
-  }
-
   .container, .row {
     height: 100%;
   }
@@ -51,7 +47,7 @@
 @media screen and (max-width: $breakpoint--medium) {
   .cta {
     background-size: cover;
-    height: 350px;
+    height: 300px;
   }
   .cta__body {
     flex-flow: column;
@@ -66,5 +62,12 @@
     width: 100%;
     margin-right: 0;
     margin-bottom: 18px;
+  }
+}
+
+
+@media screen and (max-width: $breakpoint--small) {
+  .cta {
+    height: 350px;
   }
 }

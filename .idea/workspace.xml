@@ -14,19 +14,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d936dd3-7a28-4e32-ad8a-ff8b2189f402" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cta.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/_card-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/pages/_spectacles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libs/bootstrap/scss/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/bootstrap/scss/_grid.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/startsida.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/startsida.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_cta.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_cta.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_link.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_performance-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_performance-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_event-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_spectacle-card.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/components.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/helpers/_body-grow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/helpers/_body-grow.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/pages.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +97,7 @@
       <workItem from="1605933507349" duration="3760000" />
       <workItem from="1605981325319" duration="2829000" />
       <workItem from="1605984316859" duration="2442000" />
-      <workItem from="1606033006365" duration="8152000" />
+      <workItem from="1606033006365" duration="11323000" />
     </task>
     <task id="LOCAL-00001" summary="Working on home page components">
       <created>1606035314051</created>
@@ -115,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606036457758</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Made home page">
+      <created>1606053902933</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606053902933</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,33 +141,34 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working on home page components" />
     <MESSAGE value="Made reusable main-wrapper with wavy background" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made reusable main-wrapper with wavy background" />
+    <MESSAGE value="Made home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made home page" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="87" key="GridCell.Tab.0.bottom" timestamp="1605986830822">
+    <state width="1899" height="87" key="GridCell.Tab.0.bottom" timestamp="1606054164181">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state width="1899" height="87" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1605986830822" />
-    <state width="1899" height="87" key="GridCell.Tab.0.center" timestamp="1605986830820">
+    <state width="1899" height="87" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606054164181" />
+    <state width="1899" height="87" key="GridCell.Tab.0.center" timestamp="1606054164179">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state width="1899" height="87" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1605986830820" />
-    <state width="1899" height="87" key="GridCell.Tab.0.left" timestamp="1605986830820">
+    <state width="1899" height="87" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606054164179" />
+    <state width="1899" height="87" key="GridCell.Tab.0.left" timestamp="1606054164178">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state width="1899" height="87" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1605986830820" />
-    <state width="1899" height="87" key="GridCell.Tab.0.right" timestamp="1605986830821">
+    <state width="1899" height="87" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606054164178" />
+    <state width="1899" height="87" key="GridCell.Tab.0.right" timestamp="1606054164180">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state width="1899" height="87" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1605986830821" />
-    <state x="-1360" y="178" key="Vcs.Push.Dialog.v2" timestamp="1606036459244">
+    <state width="1899" height="87" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606054164180" />
+    <state x="-1360" y="178" key="Vcs.Push.Dialog.v2" timestamp="1606053904250">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state x="-1360" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606036459244" />
-    <state x="-1259" y="193" width="598" height="490" key="find.popup" timestamp="1605936606673">
+    <state x="-1360" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606053904250" />
+    <state x="-1259" y="193" width="598" height="490" key="find.popup" timestamp="1606055032532">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state x="-1259" y="193" width="598" height="490" key="find.popup/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1605936606673" />
+    <state x="-1259" y="193" width="598" height="490" key="find.popup/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606055032532" />
     <state x="-1295" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1605985312135">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>

@@ -1,0 +1,32 @@
+.spectacles {
+
+  &__breadcrumbs {
+    margin-top: 50px;
+  }
+
+  &__grid {
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+
+  &__grid-col {
+
+  }
+
+  &__grid-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: $breakpoint--medium) {
+  .spectacles {
+    &__breadcrumbs {
+      margin-top: 15px;
+    }
+
+    &__grid {
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.spectacle-card {
+  max-width: 510px;
+  margin-bottom: 40px;
+
+  &__title {
+    letter-spacing: 0.02em;
+    color: #000;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__date {
+    color: $dark-gray;
+
+    &--mobile {
+      display: none;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__body {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+    margin-right: 20px;
+  }
+
+  &__text {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: $breakpoint--medium) {
+  .spectacle-card {
+    &__title,
+    &__date {
+      display: none;
+    }
+
+    &__title--mobile,
+    &__date--mobile {
+      display: block;
+    }
+
+    &__body {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint--small) {
+  .spectacle-card {
+    &__body {
+      flex-wrap: wrap;
+    }
+    &__info {
+      width: 100%;
+    }
+  }
+}

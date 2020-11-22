@@ -1,0 +1,63 @@
+.cta {
+  background-image: url("/img/bg_green.png");
+  height: 447px;
+  margin: 66px 0;
+
+  .container, .row {
+    height: 100%;
+  }
+
+  /*.row {
+    justify-content: center;
+  }*/
+
+  &__title {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  &__main {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    width: 60%;
+    margin-right: 50px;
+  }
+
+  &__button {
+
+  }
+}
+
+@media screen and (max-width: $breakpoint--large) {
+  .cta__title {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: $breakpoint--medium) {
+  .cta__body {
+    flex-flow: column;
+  }
+
+  .cta__title {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .cta__text {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+}

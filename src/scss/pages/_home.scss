@@ -1,0 +1,28 @@
+.home {
+
+  &__greeting {
+    margin-top: 63px;
+  }
+
+  &__greeting-title {
+    margin-bottom: 7px;
+  }
+
+  &__greeting-text {
+    margin-bottom: 31px;
+  }
+}
+
+@media screen and (max-width: $breakpoint--medium) {
+  .home__greeting {
+    margin-top: 31px;
+  }
+
+  .home__greeting-title {
+    margin-bottom: 11px;
+  }
+
+  .home__greeting-text {
+    margin-bottom: 20px;
+  }
+}

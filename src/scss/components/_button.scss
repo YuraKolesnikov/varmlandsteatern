@@ -48,3 +48,9 @@
     pointer-events: none;
   }
 }
+
+@media screen and (max-width: $breakpoint--small) {
+  .button {
+    width: 100%;
+  }
+}

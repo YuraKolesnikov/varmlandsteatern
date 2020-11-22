@@ -1,0 +1,36 @@
+.button-icon {
+  background-color: #FFF;
+  padding: 3px 10px 3px 3px;
+  border-radius: 52px;
+  text-decoration: none;
+
+  &__icon {
+    height: 23.69px;
+    width: 23.69px;
+    display: inline-block;
+
+    img {
+      height: 100%;
+      transform: translateY(-1px);
+    }
+  }
+
+  &__text {
+    font-size: $text-12;
+    font-weight: 800;
+    color: $darker-gray;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (max-width: $breakpoint--large) {
+  .button-icon {
+    background-color: $darker-gray;
+    padding: 13px 6px 13px 3px;
+
+    &__text {
+      color: #FFF;
+      font-size: $text-18;
+    }
+  }
+}

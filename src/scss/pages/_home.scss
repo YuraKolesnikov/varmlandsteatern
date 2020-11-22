@@ -2,6 +2,7 @@
 
   &__greeting {
     margin-top: 63px;
+    margin-bottom: 120px;
   }
 
   &__greeting-title {
@@ -10,6 +11,50 @@
 
   &__greeting-text {
     margin-bottom: 31px;
+  }
+
+  &__performances {
+
+  }
+
+  &__performances-title {
+    margin-bottom: 30px;
+  }
+
+  &__social {
+    margin-top: -150px;
+    margin-bottom: 100px;
+    padding: 200px 0 70px;
+    background-image: url("/img/bg_yellow_large.png");
+    position: relative;
+    z-index: -1;
+  }
+
+  &__social-info {
+    margin-right: 72px;
+  }
+
+  &__social-info-item {
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__social-info-img-caption {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__social-feed {
+    max-width: 500px;
+
+    img {
+      width: 100%;
+    }
   }
 }
 

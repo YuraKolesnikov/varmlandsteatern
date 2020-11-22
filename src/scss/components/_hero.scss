@@ -1,5 +1,35 @@
 .hero {
-  height: 534px;
+  /*height: 534px;*/
+  height: 0;
+  padding-top: 37%;
   background-color: $dark-gray;
   margin-top: 120px;
+  position: relative;
+
+  img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: $breakpoint--small) {
+  .hero {
+    padding: 0;
+    height: 450px;
+    margin-top: 0;
+    background-image: url("/img/hero_small.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    z-index: -1;
+
+    img {
+      display: none;
+    }
+  }
 }

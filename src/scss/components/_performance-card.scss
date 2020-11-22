@@ -1,6 +1,13 @@
 .performance-card {
+  display: block;
   max-width: 443px;
   margin: 0 auto 30px;
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+  }
 
   &__img {
     width: 100%;
@@ -10,21 +17,29 @@
   }
 
   &__title {
-    font-weight: 800;
-    font-size: $text-32;
     margin-bottom: 15px;
   }
 
   &__text {
-    font-weight: 400;
-    font-size: $text-18;
-    line-height: 32px;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
   }
 
   &__date {
     font-weight: 700;
     font-size: $text-20;
     line-height: 30px;
+  }
+}
+
+@media screen and (max-width: $breakpoint--medium) {
+  .performance-card {
+    margin-bottom: 20px;
+  }
+  .performance-card__text {
+    margin-bottom: 5px;
+  }
+
+  .performance-card__date {
+    font-size: $text-16;
   }
 }

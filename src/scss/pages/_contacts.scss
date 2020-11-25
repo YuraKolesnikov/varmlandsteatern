@@ -1,0 +1,50 @@
+.contacts {
+  padding-bottom: 100px;
+  &__breadcrumbs {
+    margin-top: 50px;
+  }
+
+  &__main {
+    margin-top: 50px;
+    margin-bottom: 120px;
+  }
+
+  &__main-img {
+    margin-bottom: 54px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__grid {
+    margin-bottom: 30px;
+  }
+
+  &__grid-item {
+    max-width: 320px;
+    margin: auto;
+  }
+
+  &__grid-item-title {
+    text-transform: uppercase;
+    margin-bottom: 37px;
+    border-bottom: 8px solid $base-red;
+    height: 88px;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__person {
+    margin-bottom: 35px;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+}

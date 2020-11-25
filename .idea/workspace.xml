@@ -14,16 +14,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d936dd3-7a28-4e32-ad8a-ff8b2189f402" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/cta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_card-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/pages/_spectacles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/press-release.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/courses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/location-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/locations.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/spectacle-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/spectacles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/_form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/_location-card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/_press-release.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/helpers/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/helpers/_width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/pages/_contacts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/pages/_courses.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/pages/_location-details.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/pages/_locations.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/pages/_spectacle-details.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/startsida.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/startsida.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cta.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cta.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_breadcrumbs.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_cta.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_cta.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_event-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_spectacle-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_title.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/helpers/_body-grow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/helpers/_body-grow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/helpers/_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/helpers/_text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/helpers/helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/helpers/helpers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/pages/pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/pages.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +74,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/scss/pages" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
@@ -97,7 +121,10 @@
       <workItem from="1605933507349" duration="3760000" />
       <workItem from="1605981325319" duration="2829000" />
       <workItem from="1605984316859" duration="2442000" />
-      <workItem from="1606033006365" duration="11323000" />
+      <workItem from="1606033006365" duration="14948000" />
+      <workItem from="1606106874292" duration="84000" />
+      <workItem from="1606181483582" duration="9396000" />
+      <workItem from="1606267380470" duration="5570000" />
     </task>
     <task id="LOCAL-00001" summary="Working on home page components">
       <created>1606035314051</created>
@@ -145,30 +172,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="Made home page" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="87" key="GridCell.Tab.0.bottom" timestamp="1606054164181">
+    <state width="1899" height="87" key="GridCell.Tab.0.bottom" timestamp="1606194965645">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state width="1899" height="87" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606054164181" />
-    <state width="1899" height="87" key="GridCell.Tab.0.center" timestamp="1606054164179">
+    <state width="1899" height="87" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606194965645" />
+    <state width="1899" height="87" key="GridCell.Tab.0.center" timestamp="1606194965643">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state width="1899" height="87" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606054164179" />
-    <state width="1899" height="87" key="GridCell.Tab.0.left" timestamp="1606054164178">
+    <state width="1899" height="87" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606194965643" />
+    <state width="1899" height="87" key="GridCell.Tab.0.left" timestamp="1606194965643">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state width="1899" height="87" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606054164178" />
-    <state width="1899" height="87" key="GridCell.Tab.0.right" timestamp="1606054164180">
+    <state width="1899" height="87" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606194965643" />
+    <state width="1899" height="87" key="GridCell.Tab.0.right" timestamp="1606194965644">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state width="1899" height="87" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606054164180" />
+    <state width="1899" height="87" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606194965644" />
     <state x="-1360" y="178" key="Vcs.Push.Dialog.v2" timestamp="1606053904250">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
     <state x="-1360" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606053904250" />
-    <state x="-1259" y="193" width="598" height="490" key="find.popup" timestamp="1606055032532">
+    <state x="-1259" y="193" width="598" height="490" key="find.popup" timestamp="1606191370868">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>
-    <state x="-1259" y="193" width="598" height="490" key="find.popup/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606055032532" />
+    <state x="-1259" y="193" width="598" height="490" key="find.popup/0.0.1440.900/-1920.-102.1920.1080@-1920.-102.1920.1080" timestamp="1606191370868" />
     <state x="-1295" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1605985312135">
       <screen x="-1920" y="-102" width="1920" height="1080" />
     </state>

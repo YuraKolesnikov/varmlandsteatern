@@ -1,0 +1,13 @@
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: $breakpoint--small) {
+  .non-mobile {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

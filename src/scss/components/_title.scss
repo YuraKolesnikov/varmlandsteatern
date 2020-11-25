@@ -37,6 +37,14 @@
   }
 }
 
+@media screen and (max-width: $breakpoint--large) {
+  .title {
+    &--3 {
+      font-size: $text-24;
+    }
+  }
+}
+
 
 @media (max-width: $breakpoint--medium) {
   .title {

@@ -60,3 +60,40 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint--medium) {
+  .footer {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: $breakpoint--small) {
+  .footer {
+    &__container {
+      flex-flow: column;
+      align-items: flex-start;
+    }
+
+    &__main {
+      width: 100%;
+    }
+
+    &__icons {
+      margin-top: 10px;
+      align-items: flex-start;
+    }
+
+    &__menu {
+      max-width: none;
+      margin-bottom: 25px;
+    }
+
+    &__title {
+      padding-bottom: 5px;
+    }
+
+    &__socicons {
+      margin-bottom: 10px;
+    }
+  }
+}

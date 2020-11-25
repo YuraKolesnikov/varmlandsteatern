@@ -23,6 +23,10 @@
     @include button($base-green);
   }
 
+  &--dark-green {
+    @include button($dark-green, true);
+  }
+
   &--blue {
     @include button($base-blue, true);
   }
@@ -39,6 +43,11 @@
     padding: 14px 30px;
     font-size: 1.5rem;
     min-width: 300px;
+  }
+
+  &--block {
+    width: 100%;
+    display: block;
   }
 
   &:disabled,

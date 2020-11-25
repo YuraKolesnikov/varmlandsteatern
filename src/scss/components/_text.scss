@@ -7,6 +7,16 @@
     line-height: 140%;
   }
 
+  &--sm {
+    font-size: $text-16;
+    line-height: 140%;
+  }
+
+  &--x-sm {
+    font-size: $text-14;
+    line-height: 140%;
+  }
+
   &--large {
     font-size: $text-28;
     line-height: 135%;
@@ -22,7 +32,7 @@
     }
 
     &--large {
-      font-size: $text-22;
+      font-size: $text-16;
     }
   }
 }

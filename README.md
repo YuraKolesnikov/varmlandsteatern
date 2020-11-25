@@ -5,7 +5,7 @@ This template is suitable for front-end only website development.
 ## Setup  
 
 ```
-https://github.com/YuraKolesnikov/webpack-startup && cd webpack-startup && yarn install
+https://github.com/YuraKolesnikov/varmlandsteatern && cd varmlandsteatern && yarn && yarn start
 ```
 
 ## NPM Scripts

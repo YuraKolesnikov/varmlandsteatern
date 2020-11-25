@@ -47,8 +47,10 @@
     background-size: cover;
     height: 260px;
   }
+
   .cta__body {
     flex-flow: column;
+    align-items: flex-start;
   }
 
   .cta__title {
@@ -65,10 +67,12 @@
 
 @media screen and (max-width: $breakpoint--small) {
   .cta {
-   margin-bottom: 30px;
+    margin-bottom: 30px;
+    height: 330px;
   }
 
-  .cta__main {
+  /* TODO: Только для --last-section */
+  /*.cta__main {
     justify-content: flex-end;
-  }
+  }*/
 }

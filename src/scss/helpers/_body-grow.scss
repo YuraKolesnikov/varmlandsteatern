@@ -5,10 +5,13 @@ body {
 }
 
 .main-wrapper {
-  padding-top: 120px;
   flex-grow: 1;
   position: relative;
   overflow: hidden;
+
+  &--without-hero {
+    padding-top: 120px;
+  }
 
   &:before,
   &:after {
@@ -37,7 +40,7 @@ body {
 }
 
 @media screen and (max-width: $breakpoint--small) {
-  .main-wrapper {
+  .main-wrapper--without-hero {
     padding-top: 62px;
   }
 }

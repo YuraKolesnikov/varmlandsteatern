@@ -55,6 +55,10 @@
     img {
       width: 100%;
     }
+
+    &--mobile {
+      display: none;
+    }
   }
 }
 
@@ -69,5 +73,22 @@
 
   .home__greeting-text {
     margin-bottom: 20px;
+  }
+
+  .home__social-feed--mobile {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .home__social-feed--non-mobile {
+    display: none;
+  }
+
+  .home__social-info {
+    margin: 0;
+  }
+
+  .home__social-title {
+    margin-bottom: 5px;
   }
 }

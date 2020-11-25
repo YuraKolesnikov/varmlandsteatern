@@ -13,7 +13,7 @@
   }
 
   &__title {
-    width: 75%;
+    width: 50%;
     margin-bottom: 20px;
   }
 
@@ -71,8 +71,12 @@
     height: 330px;
   }
 
+  .cta--last {
+    height: 260px;
+  }
+
   /* TODO: Только для --last-section */
-  /*.cta__main {
+  .cta--last .cta__main {
     justify-content: flex-end;
-  }*/
+  }
 }

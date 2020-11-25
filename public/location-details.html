@@ -14,15 +14,15 @@
 <header>
   <nav class="navbar">
     <div class="navbar__logo">
-      <img src="img/logo.svg" alt="">
+      <a href="index.html"><img src="img/logo.svg" alt=""></a>
     </div>
     <div class="navbar__main">
       <ul class="navbar__nav">
-        <li class="navbar__item"><a href="#" class="navbar__link">Föreställningar</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Scener</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Kurser</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Medlemskap</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Kontakt</a></li>
+        <li class="navbar__item"><a href="shows.html" class="navbar__link">Föreställningar</a></li>
+        <li class="navbar__item"><a href="locations.html" class="navbar__link">Scener</a></li>
+        <li class="navbar__item"><a href="courses-main.html" class="navbar__link">Kurser</a></li>
+        <li class="navbar__item"><a href="membership.html" class="navbar__link">Medlemskap</a></li>
+        <li class="navbar__item"><a href="contacts.html" class="navbar__link">Kontakt</a></li>
       </ul>
       <div class="navbar__buttons">
         <a href="#" class="navbar__buttons-item">
@@ -44,7 +44,7 @@
     <img src="/img/hero.png" alt="">
   </div>
 </header>
-<main class="section locations main-wrapper">
+<main class="section location-details main-wrapper">
   <div class="container">
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item">
@@ -53,68 +53,56 @@
       <li class="breadcrumbs__item">
         <a href="#" class="breadcrumbs__link">Scener</a>
       </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Tempelriddaren</a>
+      </li>
     </ul>
   </div>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10">
-        <p class="section__main-text text text-center">
-          Förutom Tempelriddaren som är vår hemvist och huvudscen spelar vi även på andra scener i Karlstad med omnejd. Vissa lite större och andra som vi bara används under sommarhalvåret. Här kan du läsa lite om våra scener och lokaler.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="locations__grid">
+  <section class="location-details__main">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="location-card">
-            <div class="location-card__img">
-              <img src="/img/location.png" alt="">
-            </div>
-            <div class="location-card__footer">
-              <h3 class="location-card__title title title--3">Tempelriddaren</h3>
-              <button class="button button--green">Läs mer</button>
-            </div>
+        <div class="col-12">
+          <div class="section__main-img">
+            <img src="/img/location_lg.png" alt="">
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="location-card">
-            <div class="location-card__img">
-              <img src="/img/location.png" alt="">
-            </div>
-            <div class="location-card__footer">
-              <h3 class="location-card__title title title--3">Tempelriddaren</h3>
-              <button class="button button--green">Läs mer</button>
-            </div>
-          </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 text-center">
+          <h1 class="section__main-title title title--1 text-left">
+            Välkommen till Värmlandsteatern och Tempelriddaren!
+          </h1>
+          <p class="section__main-text text text-justify">
+            Tempelriddaren heter det här huset där Värmlandsteatern bedriver sin verksamhet och har som hemmascen sedan hösten 2008. Vi är en teater med föreställningar för alla generationer då vi erbjuder både klassiska och moderna produktioner. På Tempelriddaren driver vi också  Värmlandsteaterns egen teaterskola för barn, ungdomar och vuxna. Våra fina lokaler kan hyras för konferenser, konserter och föreläsningar. I entréplan finns ett trevligt fairtradecafé med ekologiskt utbud. Caféet är öppet i samband med föreställningar i huset.
+          </p>
+          <button class="button button--green">Mer om husets historia</button>
+          <p class="section__main-text text text-justify">Tempelriddaren består av flera lokaler för olika typer av ändamål. Dessa lokaler kan hyras för att användas vid konferenser, grupparbeten och andra typer av blablablablablablablablabla. </p>
+          <button class="button button--dark-green">Läs mer om lokalerna</button>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="location-card">
-            <div class="location-card__img">
-              <img src="/img/location.png" alt="">
-            </div>
-            <div class="location-card__footer">
-              <h3 class="location-card__title title title--3">Tempelriddaren</h3>
-              <button class="button button--green">Läs mer</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="location-card">
-            <div class="location-card__img">
-              <img src="/img/location.png" alt="">
-            </div>
-            <div class="location-card__footer">
-              <h3 class="location-card__title title title--3">Tempelriddaren</h3>
-              <button class="button button--green">Läs mer</button>
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container">
+      <div class="row justify-content-center justify-content-sm-start justify-content-md-center">
+        <div class="col-12 col-lg-10">
+          <div class="cta__main">
+            <h2 class="cta__title title title--2">Vill du hyra lokal?</h2>
+            <div class="cta__body">
+              <p class="cta__text text--condensed text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pretium eu posuere et molestie odio et magna nisl.
+                Odio in malesuada sit bibendum tortor. Eget id posuere ma varius.
+              </p>
+              <button class="cta__button button button--red button--lg">Läs mer / boka</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </main>
+
 <footer class="footer">
   <div class="footer__container">
     <div class="footer__main">
@@ -157,4 +145,3 @@
 <script src="bundle.js"></script>
 </body>
 </html>
-

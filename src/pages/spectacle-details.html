@@ -1,27 +1,69 @@
-<main class="main-wrapper spectacle-details">
-  <div class="spectacle-details__breadcrumbs non-mobile">
-    <div class="container">
-      <section class="my-5">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">Hem</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">Förestallningar</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">En julsaga</a>
-          </li>
-        </ul>
-      </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="img/webpack.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Varmlandsteatern</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bundle.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <img src="img/logo.svg" alt="">
     </div>
+    <div class="navbar__main">
+      <ul class="navbar__nav">
+        <li class="navbar__item"><a href="#" class="navbar__link">Föreställningar</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Scener</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Kurser</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Medlemskap</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Kontakt</a></li>
+      </ul>
+      <div class="navbar__buttons">
+        <a href="#" class="navbar__buttons-item">
+          <img src="img/fb_white.svg" alt="">
+        </a>
+        <a href="#" class="navbar__buttons-item">
+          <img src="img/insta_white.svg" alt="">
+        </a>
+        <a href="#" class="navbar__buttons-item button-icon">
+            <span class="button-icon__icon">
+              <img src="img/log_in.svg" alt="">
+            </span>
+          <span class="button-icon__text">Logga in</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="hero">
+    <img src="/img/hero.png" alt="">
   </div>
-  <a href="#">Föreställningar</a>
-  <section class="spectacle-details__main">
+</header>
+<main class="main-wrapper section spectacle-details">
+  <div class="container">
+    <ul class="breadcrumbs non-mobile">
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Hem</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Förestallningar</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">En julsaga</a>
+      </li>
+    </ul>
+    <a href="#" class="back-link mobile">Förestallningar</a>
+  </div>
+  <section class="section__main spectacle-details__main">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-8">
-          <h1 class="title title--1 spectacle-details__main-title">En Julsaga</h1>
+          <h1 class="title title--1 section__main-title">En Julsaga</h1>
           <p class="spectacle-details__date">Tempelriddaren - 10 sep–29 nov 2020</p>
           <button class="button button--red mobile">Boka biljeter</button>
           <p class="spectacle-details__synopsis">
@@ -35,11 +77,11 @@
             <h5 class="title title--5 spectacle-details__info-title text-uppercase">Recensioner</h5>
             <div class="spectacle-details__review-item">
               <p class="text--large text-italic">”Skådespelarna bjuder på underbart  minspel och inlevelsefullt kroppsspråk.”</p>
-              <p class="spectacle-details__read-more">NWT 101120 - <a href="#">Läs hela recencionen</a></p>
+              <p class="spectacle-details__read-more">NWT 101120 - <a href="#" class="spectacle-details__link">Läs hela recencionen</a></p>
             </div>
             <div class="spectacle-details__review-item">
               <p class="text--large text-italic">”Skådespelarna bjuder på underbart  minspel och inlevelsefullt kroppsspråk.”</p>
-              <p class="spectacle-details__read-more">NWT 101120 - <a href="#">Läs hela recencionen</a></p>
+              <p class="spectacle-details__read-more">NWT 101120 - <a href="#" class="spectacle-details__link">Läs hela recencionen</a></p>
             </div>
           </div>
           <div class="spectacle-details__info">
@@ -97,7 +139,7 @@
           <div class="text-center">
             <button class="button button--red button--lg non-mobile">Boka biljeter</button>
           </div>
-          <div style="max-width: 320px; margin: auto">
+          <div class="spectacle-details__team">
             <div class="spectacle-details__poster non-mobile">
               <img src="/img/hero_small.png" alt="">
             </div>
@@ -158,10 +200,10 @@
       </div>
     </div>
   </section>
-  <section class="cta">
+  <section class="cta cta--last">
     <div class="container">
-      <div class="row justify-content-center justify-content-sm-start justify-content-md-center">
-        <div class="col-12 col-lg-10">
+      <div class="row">
+        <div class="col-12">
           <div class="cta__main">
             <h2 class="cta__title title title--2">Är du nyfiken på  tidigare föreställningar?</h2>
             <div class="cta__body">
@@ -177,5 +219,46 @@
       </div>
     </div>
   </section>
-
 </main>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__main">
+      <div class="row flex-column flex-sm-row">
+        <div class="col-12 col-sm-6">
+          <div class="footer__menu">
+            <h4 class="footer__title title title--4">Kontakt</h4>
+            <ul class="footer__links">
+              <li class="footer__links-item">Värmlandsteatern</li>
+              <li class="footer__links-item">Pihlgrensgatan 3. 652 25 Karlstad</li>
+              <li class="footer__links-item">Tel: 054-15 28 89</li>
+              <li class="footer__links-item">info@varmlandsteatern.se</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="footer__menu">
+            <h4 class="footer__title title title--4">Länkar</h4>
+            <ul class="footer__links">
+              <li class="footer__links-item"><a href="#" class="footer__link">Pressmaterial</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Samarbetsprojekt</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Värmlandsteaterns jubileumsfond</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Webbshop</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__icons">
+      <div class="footer__socicons">
+        <img class="footer__socicon" src="/img/insta_white.svg" alt="">
+        <img class="footer__socicon" src="/img/fb_white.svg" alt="">
+      </div>
+      <div class="footer__logo">
+        <img src="/img/logo.svg" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="bundle.js"></script>
+</body>
+</html>

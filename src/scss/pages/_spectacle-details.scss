@@ -1,12 +1,7 @@
 .spectacle-details {
 
   &__main {
-    margin-bottom: 100px;
     position: relative;
-  }
-
-  &__main-title {
-    margin-bottom: 20px;
   }
 
   &__date {
@@ -77,6 +72,15 @@
       top: 0;
     }
   }
+
+  &__team {
+    max-width: 320px;
+    margin: auto;
+  }
+
+  &__link {
+    color: #000;
+  }
 }
 
 @media screen and (max-width: $breakpoint--large) {
@@ -97,24 +101,12 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .spectacle-details {
-    &__images {
-      position: static;
-    }
-  }
-}
-
 @media screen and (max-width: $breakpoint--small) {
   .spectacle-details {
-
     &__main {
+      margin-top: 25px;
       margin-bottom: 50px;
       padding-bottom: 0;
-    }
-
-    &__main-title {
-      margin-bottom: 6px;
     }
 
     &__date {
@@ -135,6 +127,10 @@
       width: 100%;
       margin-right: 0;
       margin-bottom: 24px;
+
+      .text--condensed {
+        margin-bottom: 5px;
+      }
     }
 
     &__images {
@@ -142,6 +138,10 @@
       margin: 25px 0;
       grid-template-columns: calc(100vw - 24px);
       grid-row-gap: 20px;
+    }
+
+    &__team {
+      max-width: none;
     }
   }
 }

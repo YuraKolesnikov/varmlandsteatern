@@ -1,34 +1,5 @@
 .locations {
-  padding-bottom: 50px;
-
-  &__breadcrumbs {
-    margin-top: 50px;
-  }
-
-  &__main-text {
-    margin-top: 50px;
-    margin-bottom: 55px;
-    text-align: center;
-  }
-
   &__grid {
     margin-bottom: 120px;
-  }
-}
-
-@media screen and (max-width: $breakpoint--large) {
-  .locations {
-    &__main-text {
-      margin: 30px 0;
-    }
-  }
-}
-
-@media screen and (max-width: $breakpoint--small) {
-  .locations {
-    &__main-text {
-      text-align: left;
-      margin: 30px 0;
-    }
   }
 }

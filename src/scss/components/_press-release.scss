@@ -29,20 +29,16 @@
       outline: 0;
       text-decoration: none;
     }
+
+    @include small {
+      margin-bottom: 20px;
+    }
   }
 
   &__item-title {
     margin-bottom: 3px;
-  }
 
-  &__item-text {
-
-  }
-}
-
-@media screen and (max-width: $breakpoint--small) {
-  .press-release {
-    &__title {
+    @include small {
       display: block;
       margin-bottom: 32px;
 
@@ -51,9 +47,6 @@
         bottom: -15px;
       }
     }
-
-    &__item {
-      margin-bottom: 20px;
-    }
   }
+}
 }

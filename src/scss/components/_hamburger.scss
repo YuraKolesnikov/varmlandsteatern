@@ -58,17 +58,12 @@
       }
     }
   }
-}
 
-@media screen and (max-width: $breakpoint--large) {
-  .hamburger {
+  @include large {
     display: block;
   }
-}
 
-
-@media screen and (max-width: $breakpoint--small) {
-  .hamburger {
+  @include small {
     right: 5px;
   }
 }

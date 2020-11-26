@@ -4,10 +4,19 @@
   &__main {
     margin-top: 25px;
     margin-bottom: 100px;
+
+    @include small {
+      margin-top: 0;
+      margin-bottom: 160px;
+    }
   }
 
   &__main-title {
     margin-bottom: 15px;
+
+    @include small {
+      margin-bottom: 6px;
+    }
   }
 
   &__main-text {
@@ -26,19 +35,4 @@
   &__main-button {
     margin-bottom: 50px;
   }
-}
-
-@media screen and (max-width: $breakpoint--medium) {
-
-}
-
-@media screen and (max-width: $breakpoint--small) {
-  .section__main-title {
-    margin-bottom: 6px;
-  }
-
-  .section__main {
-    margin-top: 0;
-    margin-bottom: 160px;
-  }
-}
+}=

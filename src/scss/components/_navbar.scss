@@ -11,6 +11,11 @@
   background: #000;
   filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.25));
 
+  @include small {
+    padding: 20px;
+    height: 62px;
+  }
+
   &--gradient {
     padding: 15px 30px 60px;
     background: linear-gradient(180deg, rgba(black, 0.79) 50.4%, rgba($darker-gray, 0) 103.77%);
@@ -19,16 +24,62 @@
   &__main {
     display: flex;
     align-items: center;
+
+    @include large {
+      position: absolute;
+      width: 250px;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      background-color: rgba(#000, .9);
+      transition: transform .2s ease-out;
+      align-items: normal;
+      flex-flow: column;
+      transform: translateX(250px);
+
+      &--active {
+        transform: translateX(0);
+      }
+    }
+
+    @include medium {
+      width: 100%;
+      transform: translateX(100%);
+
+      &--active {
+        transform: translateX(0);
+      }
+    }
   }
 
   &__nav {
     display: flex;
     align-items: center;
     list-style-type: none;
+
+    @include large {
+      padding-top: 100px;
+      flex-flow: column;
+      align-items: flex-start;
+      padding-left: 20px;
+    }
+
+    @include medium {
+      margin-bottom: 50px;
+    }
   }
 
   &__item {
     margin-right: 38px;
+
+    @include large {
+      margin-bottom: 20px;
+    }
+
+    @include medium {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__logo {
@@ -42,6 +93,10 @@
       top: 18px;
       z-index: 100;
       width: 95px;
+    }
+
+    @include small {
+      width: 96px;
     }
   }
 
@@ -76,111 +131,50 @@
     &--active:after {
       opacity: 1;
     }
+
+    @include large {
+      font-size: $text-20;
+
+      &--active:after {
+         opacity: 0;
+      }
+    }
   }
 
   &__buttons {
     display: grid;
     grid-template-columns: 30px 30px 104px;
     grid-column-gap: 15px;
-  }
-}
 
-@media screen and (max-width: $breakpoint--large) {
-  .navbar__main {
-    position: absolute;
-    width: 250px;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    background-color: rgba(#000, .9);
-    transition: transform .2s ease-out;
-    align-items: normal;
-    flex-flow: column;
-    transform: translateX(250px);
+    @include large {
+      max-width: 166px;
+      margin: 0 auto;
+      grid-template-columns: 20px 48px 48px 20px;
+      grid-row-gap: 20px;
 
-    &--active {
-      transform: translateX(0);
-    }
-  }
-
-  .navbar__nav {
-    padding-top: 100px;
-    flex-flow: column;
-    align-items: flex-start;
-    padding-left: 20px;
-  }
-
-  .navbar__item {
-    margin-bottom: 20px;
-  }
-
-  .navbar__link {
-    font-size: $text-20;
-
-    &--active:after {
-      opacity: 0;
-    }
-  }
-
-  .navbar__buttons {
-    max-width: 166px;
-    margin: 0 auto;
-    grid-template-columns: 20px 48px 48px 20px;
-    grid-row-gap: 20px;
-
-    .button-icon {
-      grid-column: 1 / 5;
-      grid-row: 1;
-    }
-
-    .navbar__buttons-icon {
-      display: block;
-      width: 48px;
-      height: 48px;
-
-      img {
-        height: 100%;
-        width: 100%;
+      .button-icon {
+        grid-column: 1 / 5;
+        grid-row: 1;
       }
 
-      &:first-child {
-        grid-column: 2;
-      }
+      .navbar__buttons-icon {
+        display: block;
+        width: 48px;
+        height: 48px;
 
-      &:nth-child(2) {
-        grid-column: 3;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+
+        &:first-child {
+          grid-column: 2;
+        }
+
+        &:nth-child(2) {
+          grid-column: 3;
+        }
       }
     }
-  }
-}
-
-@media screen and (max-width: $breakpoint--medium) {
-  .navbar__main {
-    width: 100%;
-    transform: translateX(100%);
-
-    &--active {
-      transform: translateX(0);
-    }
-  }
-
-  .navbar__nav {
-    margin-bottom: 50px;
-  }
-
-  .navbar__item {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: $breakpoint--small) {
-  .navbar {
-    padding: 20px;
-    height: 62px;
-  }
-
-  .navbar__logo {
-    width: 96px;
   }
 }

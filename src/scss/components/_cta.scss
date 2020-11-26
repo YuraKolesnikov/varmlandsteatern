@@ -2,6 +2,28 @@
   background-image: url("/img/bg_green.png");
   height: 447px;
 
+  @include small {
+    margin-bottom: 30px;
+    height: 330px;
+  }
+
+  @include medium {
+    background-size: cover;
+    height: 260px;
+  }
+
+  &--last {
+    @include small {
+      height: 260px;
+    }
+  }
+
+  &--last .cta__main {
+    @include small {
+      justify-content: flex-end;
+    }
+  }
+
   &--no-bg {
     background-image: none;
     height: auto;
@@ -15,6 +37,15 @@
   &__title {
     width: 50%;
     margin-bottom: 20px;
+
+    @include large {
+      width: 75%;
+    }
+
+    @include medium {
+      width: 100%;
+      margin-bottom: 6px;
+    }
   }
 
   &__main {
@@ -28,55 +59,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include medium {
+      flex-flow: column;
+      align-items: flex-start;
+    }
   }
 
   &__text {
     width: 50%;
     margin-right: 50px;
-  }
-}
 
-@media screen and (max-width: $breakpoint--large) {
-  .cta__title {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: $breakpoint--medium) {
-  .cta {
-    background-size: cover;
-    height: 260px;
-  }
-
-  .cta__body {
-    flex-flow: column;
-    align-items: flex-start;
-  }
-
-  .cta__title {
-    width: 100%;
-    margin-bottom: 6px;
-  }
-
-  .cta__text {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 18px;
-  }
-}
-
-@media screen and (max-width: $breakpoint--small) {
-  .cta {
-    margin-bottom: 30px;
-    height: 330px;
-  }
-
-  .cta--last {
-    height: 260px;
-  }
-
-  /* TODO: Только для --last-section */
-  .cta--last .cta__main {
-    justify-content: flex-end;
+    @include medium {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 18px;
+    }
   }
 }

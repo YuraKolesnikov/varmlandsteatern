@@ -9,14 +9,28 @@
     max-width: 1320px;
     margin: auto;
     padding: 0 24px;
+
+    @include small {
+      flex-flow: column;
+      align-items: flex-start;
+    }
   }
 
   &__main {
     width: 50%;
+
+    @include small {
+      width: 100%;
+    }
   }
 
   &__menu {
     max-width: 230px;
+
+    @include small {
+      max-width: none;
+      margin-bottom: 25px;
+    }
   }
 
   &__title {
@@ -24,6 +38,10 @@
     padding-bottom: 15px;
     margin-bottom: 13px;
     border-bottom: 1px solid #FFF;
+
+    @include small {
+      padding-bottom: 5px;
+    }
   }
 
   &__links {
@@ -49,6 +67,17 @@
     flex-flow: column;
     justify-content: space-between;
     align-items: flex-end;
+
+    @include small {
+      margin-top: 10px;
+      align-items: flex-start;
+    }
+  }
+
+  &__socicons {
+    @include small {
+      margin-bottom: 10px;
+    }
   }
 
   &__socicon {
@@ -59,41 +88,8 @@
       margin-right: 18px;
     }
   }
-}
 
-@media screen and (max-width: $breakpoint--medium) {
-  .footer {
+  @include medium {
     padding: 20px 0;
-  }
-}
-
-@media screen and (max-width: $breakpoint--small) {
-  .footer {
-    &__container {
-      flex-flow: column;
-      align-items: flex-start;
-    }
-
-    &__main {
-      width: 100%;
-    }
-
-    &__icons {
-      margin-top: 10px;
-      align-items: flex-start;
-    }
-
-    &__menu {
-      max-width: none;
-      margin-bottom: 25px;
-    }
-
-    &__title {
-      padding-bottom: 5px;
-    }
-
-    &__socicons {
-      margin-bottom: 10px;
-    }
   }
 }

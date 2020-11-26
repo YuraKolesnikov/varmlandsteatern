@@ -18,6 +18,10 @@
     outline: none;
   }
 
+  @include small {
+    width: 100%;
+  }
+
   &--round {
     border-radius: $basic-border-radius;
   }
@@ -59,11 +63,5 @@
     opacity: .75;
     user-select: none;
     pointer-events: none;
-  }
-}
-
-@media screen and (max-width: $breakpoint--small) {
-  .button {
-    width: 100%;
   }
 }

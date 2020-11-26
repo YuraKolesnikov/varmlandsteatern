@@ -2,9 +2,17 @@
   font-size: $text-20;
   line-height: 150%;
 
+  @include medium {
+    font-size: $text-16;
+  }
+
   &--condensed {
     font-size: $text-18;
     line-height: 140%;
+
+    @include medium {
+      font-size: $text-14;
+    }
   }
 
   &--sm {
@@ -20,18 +28,8 @@
   &--large {
     font-size: $text-28;
     line-height: 135%;
-  }
-}
 
-@media screen and (max-width: $breakpoint--medium) {
-  .text {
-    font-size: $text-16;
-
-    &--condensed {
-      font-size: $text-14;
-    }
-
-    &--large {
+    @include medium {
       font-size: $text-16;
     }
   }

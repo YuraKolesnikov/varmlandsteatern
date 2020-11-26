@@ -6,12 +6,21 @@
 
   &__legend {
     margin-bottom: 30px;
+
+    @include small {
+      margin-bottom: 10px;
+    }
   }
 
   &__main {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+
+    @include medium {
+      flex-flow: column;
+      align-items: flex-start;
+    }
   }
 
   &__fields {
@@ -19,12 +28,28 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
+
+    @include large {
+      .form__fields {
+        width: 75%;
+      }
+    }
+
+    @include medium {
+      width: 100%;
+      margin-bottom: 23px;
+    }
   }
 
   &__fieldset {
     display: flex;
     flex-flow: column;
     padding: 0 10px;
+
+    @include small {
+      width: 100% !important;
+      margin-bottom: 12px;
+    }
   }
 
   &__label {
@@ -38,41 +63,6 @@
 
     &:focus {
       outline: 0;
-    }
-  }
-}
-
-@media screen and (max-width: $breakpoint--large) {
-  .form {
-    &__fields {
-      width: 75%;
-    }
-  }
-}
-
-@media screen and (max-width: $breakpoint--medium) {
-  .form {
-    &__main {
-      flex-flow: column;
-      align-items: flex-start;
-    }
-
-    &__fields {
-      width: 100%;
-      margin-bottom: 23px;
-    }
-  }
-}
-
-@media screen and (max-width: $breakpoint--small) {
-  .form {
-    &__legend {
-      margin-bottom: 10px;
-    }
-
-    &__fieldset {
-      width: 100% !important;
-      margin-bottom: 12px;
     }
   }
 }

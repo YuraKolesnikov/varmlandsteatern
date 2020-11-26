@@ -1,20 +1,20 @@
 @mixin small {
-  @media (min-width: $breakpoint--small) {
+  @media (max-width: $breakpoint--small) {
     @content;
   }
 }
 @mixin medium {
-  @media (min-width: $breakpoint--medium) {
+  @media (max-width: $breakpoint--medium) {
     @content;
   }
 }
 @mixin large {
-  @media (min-width: $breakpoint--large) {
+  @media (max-width: $breakpoint--large) {
     @content;
   }
 }
 @mixin giant {
-  @media (min-width: $breakpoint--giant) {
+  @media (max-width: $breakpoint--giant) {
     @content;
   }
 }

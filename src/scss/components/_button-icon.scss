@@ -3,6 +3,7 @@
   padding: 3px 10px 3px 3px;
   border-radius: 52px;
   text-decoration: none;
+  display: inline-block;
 
   &__icon {
     height: 23.69px;
@@ -25,11 +26,17 @@
 
 @media screen and (max-width: $breakpoint--large) {
   .button-icon {
-    background-color: $darker-gray;
-    padding: 13px 6px 13px 3px;
+    /*background-color: $darker-gray;*/
+    padding: 8px 24px 8px 8px;
+
+    &__icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
 
     &__text {
-      color: #FFF;
+      /*color: #FFF;*/
       font-size: $text-18;
     }
   }

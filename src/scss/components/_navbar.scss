@@ -35,6 +35,14 @@
     img {
       width: 100%;
     }
+
+    &--active {
+      position: absolute;
+      left: 20px;
+      top: 18px;
+      z-index: 100;
+      width: 95px;
+    }
   }
 
   &__link {
@@ -42,7 +50,20 @@
     font-weight: 800;
     font-size: $text-14;
     text-decoration: none;
+    position: relative;
     transition: color .25s ease-out;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -15px;
+      left: 0;
+      background-color: $base-red;
+      opacity: 0;
+      z-index: 1;
+    }
 
     &:hover {
       color: $base-red;
@@ -51,16 +72,16 @@
     &--active {
       color: $base-red;
     }
+
+    &--active:after {
+      opacity: 1;
+    }
   }
 
   &__buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  &__buttons-item:not(:last-of-type) {
-    margin-right: 15px;
+    display: grid;
+    grid-template-columns: 30px 30px 104px;
+    grid-column-gap: 15px;
   }
 }
 
@@ -69,11 +90,10 @@
     position: absolute;
     width: 250px;
     height: 100vh;
-    border: 3px solid tomato;
     top: 0;
     right: 0;
-    background-color: #FFF;
-    transition: transform .35s ease-out;
+    background-color: rgba(#000, .9);
+    transition: transform .2s ease-out;
     align-items: normal;
     flex-flow: column;
     transform: translateX(250px);
@@ -84,11 +104,10 @@
   }
 
   .navbar__nav {
-    padding-top: 50px;
+    padding-top: 100px;
     flex-flow: column;
-    height: 30%;
     align-items: flex-start;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   .navbar__item {
@@ -97,22 +116,61 @@
 
   .navbar__link {
     font-size: $text-20;
-    color: $darker-gray;
+
+    &--active:after {
+      opacity: 0;
+    }
   }
 
   .navbar__buttons {
-    padding-left: 7px;
-  }
+    max-width: 166px;
+    margin: 0 auto;
+    grid-template-columns: 20px 48px 48px 20px;
+    grid-row-gap: 20px;
 
-  .navbar__buttons-item:nth-child(3) {
-    order: -1;
-    width: 100%;
+    .button-icon {
+      grid-column: 1 / 5;
+      grid-row: 1;
+    }
+
+    .navbar__buttons-icon {
+      display: block;
+      width: 48px;
+      height: 48px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      &:first-child {
+        grid-column: 2;
+      }
+
+      &:nth-child(2) {
+        grid-column: 3;
+      }
+    }
   }
 }
 
 @media screen and (max-width: $breakpoint--medium) {
-  .navbar__link {
+  .navbar__main {
+    width: 100%;
+    transform: translateX(100%);
 
+    &--active {
+      transform: translateX(0);
+    }
+  }
+
+  .navbar__nav {
+    margin-bottom: 50px;
+  }
+
+  .navbar__item {
+    width: 100%;
+    text-align: center;
   }
 }
 

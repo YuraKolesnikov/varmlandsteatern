@@ -9,6 +9,10 @@ body {
   font-family: $font--text;
 }
 
+.header {
+  position: relative;
+}
+
 @import "components/components";
 @import "pages/pages";
 @import "helpers/helpers";

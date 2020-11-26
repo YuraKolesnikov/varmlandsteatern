@@ -1,0 +1,44 @@
+.person-card {
+  display: flex;
+  align-items: flex-start;
+
+  &__img {
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    min-width: 209px;
+    margin-right: 50px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__main {
+    padding-top: 10px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: $breakpoint--small) {
+  .person-card {
+    &__img {
+      min-width: 50px;
+      max-width: 105px;
+      margin-right: 16px;
+    }
+
+    &__main {
+      padding-top: 0;
+    }
+
+    &__name {
+      margin-bottom: 0;
+    }
+  }
+}

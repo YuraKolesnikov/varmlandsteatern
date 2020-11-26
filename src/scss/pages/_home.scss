@@ -25,9 +25,18 @@
     margin-top: -150px;
     margin-bottom: 100px;
     padding: 200px 0 70px;
-    background-image: url("/img/bg_yellow_large.png");
     position: relative;
-    z-index: -1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: url("/img/bg_yellow_large.png");
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 
   &__social-info {

@@ -1,12 +1,10 @@
-@mixin button($background, $text-light: false) {
+@mixin button($background, $text-color: #000) {
+  color: $text-color;
   background-color: $background;
   transition: background-color .25s ease-in-out;
 
-  @if $text-light {
-    color: #FFF;
-  }
-
   &:hover {
+    color: $text-color;
     background-color: lighten($background, 5%);
   }
 }

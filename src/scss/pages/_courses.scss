@@ -1,19 +1,15 @@
 .courses {
   padding-bottom: 200px;
 
-  &__description {
-    margin-bottom: 72px;
-  }
-}
-
-@media screen and (max-width: $breakpoint--medium) {
-  .courses {
+  @include medium {
     padding-bottom: 50px;
   }
-}
 
-@media screen and (max-width: $breakpoint--small) {
-  .courses {
+  @include small {
     padding-bottom: 0;
+  }
+
+  &__description {
+    margin-bottom: 72px;
   }
 }

@@ -2,6 +2,16 @@
 
   &__main {
     position: relative;
+
+    @include large {
+      padding-bottom: 400px;
+    }
+
+    @include small {
+      margin-top: 25px;
+      margin-bottom: 50px;
+      padding-bottom: 0;
+    }
   }
 
   &__date {
@@ -10,6 +20,12 @@
     line-height: 22px;
     letter-spacing: 0.02em;
     color: $dark-gray;
+
+    @include small {
+      font-size: $text-14;
+      line-height: 22px;
+      margin-bottom: 12px;
+    }
   }
 
   &__reviews {
@@ -30,6 +46,20 @@
     width: calc(50% - 29px);
     margin-bottom: 42px;
 
+    @include large {
+      width: 100%;
+    }
+
+    @include small {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 24px;
+
+      .text--condensed {
+        margin-bottom: 5px;
+      }
+    }
+
     &:nth-child(odd) {
       margin-right: 29px;
     }
@@ -47,6 +77,19 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 12px;
     margin-top: 50px;
+
+    @include large {
+      position: absolute;
+      max-width: 80%;
+      left: 10%;
+    }
+
+    @include small {
+      position: static;
+      margin: 25px 0;
+      grid-template-columns: calc(100vw - 24px);
+      grid-row-gap: 20px;
+    }
   }
 
   &__image {
@@ -76,72 +119,25 @@
   &__team {
     max-width: 320px;
     margin: auto;
+
+    @include small {
+      max-width: none;
+    }
   }
 
   &__link {
     color: #000;
   }
-}
 
-@media screen and (max-width: $breakpoint--large) {
-  .spectacle-details {
-    &__info-item {
-      width: 100%;
-    }
-
-    &__main {
-      padding-bottom: 400px;
-    }
-
-    &__images {
-      position: absolute;
-      max-width: 80%;
-      left: 10%;
-    }
-  }
-}
-
-@media screen and (max-width: $breakpoint--small) {
-  .spectacle-details {
-    &__main {
-      margin-top: 25px;
-      margin-bottom: 50px;
-      padding-bottom: 0;
-    }
-
-    &__date {
-      font-size: $text-14;
-      line-height: 22px;
-      margin-bottom: 12px;
-    }
-
-    &__synopsis {
+  &__synopsis {
+    @include small {
       margin-top: 20px;
     }
+  }
 
-    &__read-more {
+  &__read-more {
+    @include small {
       font-size: $text-12;
-    }
-
-    &__info-item {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 24px;
-
-      .text--condensed {
-        margin-bottom: 5px;
-      }
-    }
-
-    &__images {
-      position: static;
-      margin: 25px 0;
-      grid-template-columns: calc(100vw - 24px);
-      grid-row-gap: 20px;
-    }
-
-    &__team {
-      max-width: none;
     }
   }
 }

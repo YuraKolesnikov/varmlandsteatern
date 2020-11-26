@@ -3,18 +3,26 @@
   &__greeting {
     margin-top: 63px;
     margin-bottom: 120px;
+
+    @include medium {
+      margin-top: 31px;
+    }
   }
 
   &__greeting-title {
     margin-bottom: 7px;
+
+    @include medium {
+      margin-bottom: 11px;
+    }
   }
 
   &__greeting-text {
     margin-bottom: 31px;
-  }
 
-  &__performances {
-
+    @include medium {
+      margin-bottom: 20px;
+    }
   }
 
   &__performances-title {
@@ -41,6 +49,10 @@
 
   &__social-info {
     margin-right: 72px;
+
+    @include medium {
+      margin: 0;
+    }
   }
 
   &__social-info-item {
@@ -67,37 +79,23 @@
 
     &--mobile {
       display: none;
+
+      @include medium {
+        display: block;
+        margin-bottom: 40px;
+      }
+    }
+
+    &--non-mobile {
+      @include medium {
+        display: none;
+      }
     }
   }
-}
 
-@media screen and (max-width: $breakpoint--medium) {
-  .home__greeting {
-    margin-top: 31px;
-  }
-
-  .home__greeting-title {
-    margin-bottom: 11px;
-  }
-
-  .home__greeting-text {
-    margin-bottom: 20px;
-  }
-
-  .home__social-feed--mobile {
-    display: block;
-    margin-bottom: 40px;
-  }
-
-  .home__social-feed--non-mobile {
-    display: none;
-  }
-
-  .home__social-info {
-    margin: 0;
-  }
-
-  .home__social-title {
-    margin-bottom: 5px;
+  &__social-title {
+    @include medium {
+      margin-bottom: 5px;
+    }
   }
 }

@@ -2,18 +2,13 @@
 
   &__card {
     margin: 80px 0;
+
+    @include medium {
+      margin: 25px 0 50px 0;
+    }
   }
 
   &__table {
     margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: $breakpoint--medium) {
-  .person-info {
-
-    &__card {
-      margin: 25px 0 50px 0;
-    }
   }
 }
